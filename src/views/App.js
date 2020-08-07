@@ -8,6 +8,7 @@ import Splash from './Splash';
 import {appStyle} from './style';
 import appC from '../controllers/appC';
 import Welcome from './Welcome';
+import Login from './Login';
 
 const Stack = createStackNavigator();
 
@@ -21,6 +22,7 @@ class App extends React.Component {
       <NavigationContainer>
         <Stack.Navigator screenOptions={{headerShown: false}}>
           <Stack.Screen name={'Welcome'} component={Welcome} />
+          <Stack.Screen name={'Login'} component={Login} />
         </Stack.Navigator>
       </NavigationContainer>
     );

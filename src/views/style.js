@@ -36,6 +36,15 @@ const welcomeStyle = StyleSheet.create({
     fontWeight: 'bold',
     color: 'gray',
   },
+  input:{
+    backgroundColor: 'white',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: deviceH.W(85),
+    padding: 10,
+    marginTop: 20,
+    borderRadius: deviceH.W(35),
+  },
   nextB: {
     backgroundColor: '#087dd1',
     justifyContent: 'center',
@@ -49,6 +58,7 @@ const welcomeStyle = StyleSheet.create({
     fontWeight: 'bold',
     color: 'white',
   },
+ 
 });
 
 export {appStyle, splashStyle, welcomeStyle};
