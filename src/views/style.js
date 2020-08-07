@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {deviceH} from '../helper/deviceH.js';
+import deviceH from '../helper/deviceH';
 
 const appStyle = StyleSheet.create({
   navContainer: {
@@ -22,7 +22,7 @@ const splashStyle = StyleSheet.create({
 const welcomeStyle = StyleSheet.create({
   con: {
     flex: 1,
-    borderColor: '#c0c7d1',
+    backgroundColor: '#c0c7d1',
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -38,17 +38,17 @@ const welcomeStyle = StyleSheet.create({
   },
   nextB: {
     backgroundColor: '#087dd1',
-    width: deviceH.W(70),
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 35,
+    width: deviceH.W(70),
     padding: 10,
-    marginTop: 20,
+    borderRadius: deviceH.W(35),
+    marginTop: 30,
   },
   nextBT: {
-    fontSize: 16,
     fontWeight: 'bold',
     color: 'white',
   },
 });
+
 export {appStyle, splashStyle, welcomeStyle};

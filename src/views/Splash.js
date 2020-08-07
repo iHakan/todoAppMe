@@ -2,7 +2,6 @@ import React from 'react';
 import {View, Dimensions} from 'react-native';
 import Image from 'react-native-scalable-image';
 import {splashStyle} from './style';
-import {TouchableOpacity} from 'react-native-gesture-handler';
 
 class Splash extends React.Component {
   render() {
