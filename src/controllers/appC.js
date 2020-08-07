@@ -4,7 +4,7 @@ class appC {
   splashRender = true;
 
   splashKapat = () => {
-    setTimeout(() => (this.splashRender = false), 2000);
+    setTimeout(() => {this.splashRender = false}, 2000);
   };
 
   setSplashRender = (d) => {

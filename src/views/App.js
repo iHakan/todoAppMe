@@ -7,6 +7,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import Splash from './Splash';
 import {appStyle} from './style';
 import appC from '../controllers/appC';
+import Welcome from './Welcome';
 
 const Stack = createStackNavigator();
 
@@ -19,7 +20,7 @@ class App extends React.Component {
     return (
       <NavigationContainer>
         <Stack.Navigator screenOptions={{headerShown: false}}>
-          <Stack.Screen name={'Splash'} component={Splash} />
+          <Stack.Screen name={'Welcome'} component={Welcome} />
         </Stack.Navigator>
       </NavigationContainer>
     );
@@ -32,13 +33,13 @@ class App extends React.Component {
     return (
       <>
         <View>
-          <Text>HEADER</Text>
+          <Text> HEADER </Text>
         </View>
 
         <View style={appStyle.navContainer}>{this.navigasyon()}</View>
 
         <View>
-          <Text>FOOTER</Text>
+          <Text> FOOTER </Text>
         </View>
       </>
     );
