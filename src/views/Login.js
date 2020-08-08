@@ -29,7 +29,7 @@ class Login extends React.Component {
           onChangeText={(d) => loginC.set('sifre', d)}
         />
 
-        <TouchableOpacity style={welcomeStyle.nextB}>
+        <TouchableOpacity style={welcomeStyle.nextB} onPress={() => this.props.navigation.navigate('HomePage')}>
           <Text style={welcomeStyle.nextBT}>Devam ET</Text>
         </TouchableOpacity>
       </View>
